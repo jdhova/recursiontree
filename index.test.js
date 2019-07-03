@@ -5,7 +5,12 @@ import freeze from "deep-freeze";
  * Write a function to recursively update a given node and its children inside a tree structure.
  * We added tests to help you, run them by using `yarn test`.
  */
-function updateTree(tree, id, values) {}
+function updateTree(tree, id, values) {
+
+  if ( !tree.hasOwnProperty("children") || tree.children.length < 1)
+   return  // base recurtion which returns makeing it easy for us to deal with just the children recursively
+   
+}
 
 test("update child nodes", t => {
   const tree = freeze({
