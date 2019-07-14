@@ -9,7 +9,10 @@ function updateTree(tree, id, values) {
 
   if ( !tree.hasOwnProperty("children") || tree.children.length < 1)
    return  // base recurtion which returns makeing it easy for us to deal with just the children recursively
-   
+
+   const newTreeKids = tree.children.map(kid => {
+     const  
+   })
 }
 
 test("update child nodes", t => {
